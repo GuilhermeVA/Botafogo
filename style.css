@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-family: sans-serif;
+}
+#container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#div2{
+    margin-top: 30px;
+}
+
+#senha{
+ background-color: white;
+ color: black;
+ padding: 15px;
+ outline: none;
+ border: none;
+}
+
+#botao{
+    padding: 15px;
+    background-color: black;
+}
+
+#titulo{
+    margin-top: 10%;
+}
