@@ -13,6 +13,7 @@
 #titulocabecalho{
     margin-top: 10px;
     background-color: rgb(78, 78, 78);
+    margin-left: 15px;
 }
 
 #botaosair{
@@ -23,4 +24,22 @@
     height: 30px;
     font-size: larger;
 
+}
+
+
+#botaoselecoes{
+    text-align: center;
+    margin-top: 20px;
+}
+#Masculino{
+    width: 100px;
+    height: 30px;
+}
+#Feminino{
+    width: 100px;
+    height: 30px;
+}
+#Todos{
+    width: 100px;
+    height: 30px;
 }

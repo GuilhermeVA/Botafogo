@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="home.js"></script>
+    <script src="home.js" defer></script>
+    <script src="jogadores.js" defer></script>
+    <script src="masculino.js" defer></script>
+    <script src="feminino.js" defer></script>
+    
     <link rel="icon" type="image/png" href="escudo.png" sizes="16x16">
     <link rel="stylesheet" href="home.css">
 </head>
@@ -14,6 +18,12 @@
         <h1 id="titulocabecalho">Atletas Botafogo</h1>
         <button id="botaosair" onclick="sair()">Sair</button>
     </header>
+
+    <div id="botaoselecoes">
+        <button id="Masculino">Masculino</button>
+        <button id="Feminino">Feminino</button>
+        <button id="Todos">Todos</button>
+    </div>
 
 </body>
 </html>

@@ -1,6 +1,3 @@
-
-
-
 function logar(){
     const senha = document.getElementById('senha').value;
     const token = "um_token";
