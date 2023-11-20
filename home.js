@@ -20,9 +20,12 @@ body.appendChild(div_container);
 const cria_cartao = (atleta) => {
 
     const container_atleta = document.createElement('div');
+    container_atleta.id = 'container_atleta'
     const titulo = document.createElement('h3');
+    titulo.id = 'nome_atleta'
     titulo.innerHTML = atleta.nome;
     const imagens = document.createElement('img');
+    imagens.id = 'imagens'
     imagens.src = atleta.imagem;
 
     container_atleta.appendChild(titulo);
