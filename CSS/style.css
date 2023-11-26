@@ -33,3 +33,25 @@
 #titulo{
     margin-top: 10%;
 }
+
+
+@media (max-width: 768px){
+    #container{
+        top: 35%;
+    }
+    
+    
+    #div1{
+        margin-top: 150px;
+        margin-bottom: 100px;
+       
+    }
+    #senha{
+        margin-bottom: 10px;
+    }
+    #botao{
+        margin-bottom: 10px;
+        width: 199px;
+    }
+
+}

@@ -42,14 +42,17 @@
 #Masculino{
     width: 100px;
     height: 30px;
+    background-color: black;
 }
 #Feminino{
     width: 100px;
     height: 30px;
+    background-color: black;
 }
 #Todos{
     width: 100px;
     height: 30px;
+    background-color: black;
 }
 
 
@@ -155,5 +158,10 @@
     }
      #selectselecoes{
         display: block;
+    }
+    #selecao{
+        background-color: black;
+        
+        padding: 1em;
     }
 }

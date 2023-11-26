@@ -46,3 +46,37 @@
     font-size: 1.3em;
     
 }
+
+
+@media (max-width: 768px){
+    #paginadetalhes{
+        display: block;
+        
+        
+    }
+    #nomeimagem{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #barra{
+        background: rgb(31, 31, 31);
+        color: white;
+        text-align: center;
+        padding: 1.5px;
+        
+    }
+    #cabecalho{
+        height: 100px;
+    }
+    #titulocabecalho{
+        margin-top: 30px;
+        background-color: rgb(78, 78, 78);
+        margin-left: 15px;
+    }
+    
+    #botoes{
+        margin-top: 30px;
+    }
+    
+    
+}
