@@ -33,6 +33,12 @@
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+#selectselecoes{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 #Masculino{
     width: 100px;
     height: 30px;
@@ -92,6 +98,12 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+    #botaoselecoes{
+        display: initial;
+    }
+    #selectselecoes{
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 768px){
@@ -104,6 +116,13 @@
         margin: auto;
         margin-bottom: 30px;
     }
+    #botaoselecoes{
+        display: initial;
+    }
+    #selectselecoes{
+        display: none;
+    }
+
 }
 
 @media (max-width: 768px){
@@ -115,5 +134,26 @@
     #container_atleta{
         margin: auto;
         margin-bottom: 30px;
+    }
+ 
+
+}
+
+
+@media (min-width: 769px){
+    #botaoselecoes{
+        display: block;
+    }
+     #selectselecoes{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    #botaoselecoes{
+        display: none;
+    }
+     #selectselecoes{
+        display: block;
     }
 }

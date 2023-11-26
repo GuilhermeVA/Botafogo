@@ -39,15 +39,12 @@ const cria_cartao = (atleta) => {
     container_atleta.appendChild(saiba_mais)
     
     container_atleta.addEventListener('click', function() {
-        location.href = "detalhes.html";
-        armazenarInfoAtleta(atleta);
+        const urlDetalhesAtleta = `detalhes.html?id=${atleta.id}`;
+        window.location.href = urlDetalhesAtleta;
+        
     });
 
     div_container.appendChild(container_atleta);
-}
-
-function armazenarInfoAtleta(atleta) {
-    sessionStorage.setItem('atletaSelecionado', JSON.stringify(atleta));
 }
 
 
@@ -79,7 +76,21 @@ document.getElementById('Feminino').addEventListener('click', function(){
           
      })    
 
-
-
+document.getElementById('selecao').addEventListener('change', function(){
+    limparconteudo();
     
+    const selecao = this.value;
+    let listaAtletas;
 
+
+    if (selecao === "masculino") {
+        listaAtletas = masculino;
+    } else if (selecao === "feminino") {
+        listaAtletas = feminino;
+    } else if (selecao === "todos") {
+        listaAtletas = jogadores;
+    }
+    listaAtletas.forEach((atleta) => { cria_cartao(atleta);
+   
+})
+})
