@@ -7,9 +7,12 @@ if (token === null){
 
 
 function sair(){
-    sessionStorage.removeItem('token')
-    window.location.href = 'index.html'
+    sessionStorage.removeItem('token');
+    window.location.href = 'index.html';
 }
+
+
+
 
 
 const body = document.body;
@@ -20,19 +23,34 @@ body.appendChild(div_container);
 const cria_cartao = (atleta) => {
 
     const container_atleta = document.createElement('div');
-    container_atleta.id = 'container_atleta'
+    container_atleta.id = 'container_atleta';
     const titulo = document.createElement('h3');
-    titulo.id = 'nome_atleta'
+    titulo.id = 'nome_atleta';
     titulo.innerHTML = atleta.nome;
     const imagens = document.createElement('img');
-    imagens.id = 'imagens'
+    imagens.id = 'imagens';
     imagens.src = atleta.imagem;
+    const saiba_mais = document.createElement('h3');
+    saiba_mais.innerHTML = "Saiba mais"
+    saiba_mais.id = 'saiba_mais'
 
     container_atleta.appendChild(titulo);
     container_atleta.appendChild(imagens);
+    container_atleta.appendChild(saiba_mais)
+    
+    container_atleta.addEventListener('click', function() {
+        location.href = "detalhes.html";
+        armazenarInfoAtleta(atleta);
+    });
 
     div_container.appendChild(container_atleta);
 }
+
+function armazenarInfoAtleta(atleta) {
+    sessionStorage.setItem('atletaSelecionado', JSON.stringify(atleta));
+}
+
+
 
 
 function limparconteudo(){
